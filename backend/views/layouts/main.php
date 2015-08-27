@@ -36,6 +36,18 @@ AppAsset::register($this);
     ]);
     $menuItems = [
         ['label' => 'Home', 'url' => ['/site/index']],
+        ['label' => 'Comments', 'url' => ['/site/advertise-comment']],
+        ['label' => 'Advertisement', 'url' => ['/site/advertisement']],
+        ['label' => 'Category', 'url' => ['/site/category']],
+        ['label' => 'Category Images', 'url' => ['/site/category-images']],
+        ['label' => 'Additional Fields', 'url' => ['/site/category-additional-fields']],
+        ['label' => 'Country', 'url' => ['/site/Country']],
+        ['label' => 'Region', 'url' => ['/site/region']],
+        ['label' => 'City', 'url' => ['/site/city']],
+        ['label' => 'Images', 'url' => ['/site/images']],
+        ['label' => 'Optional Fields', 'url' => ['/site/optional-fields']],
+        ['label' => 'Temp User', 'url' => ['/site/tmp-user']],
+        ['label' => 'User', 'url' => ['/site/user']]
     ];
     if (Yii::$app->user->isGuest) {
         $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
